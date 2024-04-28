@@ -1,0 +1,21 @@
+form {
+  @include flex;
+  margin: 3rem auto;
+
+  input {
+    transition: all 0.2s ease;
+    margin-right: 1rem;
+
+    &:hover {
+      @include hover-input;
+    }
+  }
+}
+
+li.todo-item {
+  @include flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid $grey;
+  margin-bottom: 2rem;
+}
